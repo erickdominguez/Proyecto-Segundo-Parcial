@@ -1,13 +1,17 @@
 <template>
-    <div>
-        <h1>Listar Todo</h1>
+    <div >
+        <h1>Libros Pendientes de Entrega</h1>
         <ul>
             <li v-for="libro in libros" :key="libro.Autor">
-                ID: {{libro.IDLIBRO}} <hr>
-                Autor: {{libro.AUTOR}}<hr>
-                Titulo: {{libro.TITULO}} <hr>
-                Editorial: {{libro.EDITORIAL}} <hr>
-                Clasificación: {{libro.CLASIFICACION}}
+                ID: {{libro.IDLIBRO}} ||
+                Autor: {{libro.AUTOR}} ||
+                Titulo: {{libro.TITULO}} ||
+                Editorial: {{libro.EDITORIAL}} ||
+                Clasificación: {{libro.CLASIFICACION}} <hr> 
+                <router-link :to="{ name: 'Editar', params: {id: libro.id}}">Editar</router-link>
+                <hr> <hr>
+                
+                
 
             </li>
         </ul>

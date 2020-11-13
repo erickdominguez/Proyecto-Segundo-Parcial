@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Crear</h1>
+        <h1>Nuevo retiro de libro</h1>
         <form @submit.prevent="addLibro">
             <p>
                 ID Libro:
@@ -26,7 +26,7 @@
                     <option value="Adolescentes">Adolescentes</option>
                 </select>
             </p>
-            <button type="submit">Listo</button>
+            <button type="submit">Registrar</button>
         </form>
     </div>
 </template>
